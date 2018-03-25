@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/first_notification"
+        style="@style/Base.Widget.AppCompat.Button.Daniel.Color"
+        android:onClick="createNotification1"
+        android:layout_alignParentTop="true"
+        android:text="Notification1" />
+
+    <Button
+        android:id="@+id/sec_notification"
+        style="@style/Base.Widget.AppCompat.Button.Daniel.Color"
+        android:onClick="createNotification2"
+        android:layout_alignTop="@id/first_notification"
+        android:text="Notification2" />
+
+    <Button
+        android:id="@+id/third_notification"
+        style="@style/Base.Widget.AppCompat.Button.Daniel.Color"
+        android:onClick="createNotification3"
+        android:layout_alignTop="@id/sec_notification"
+        android:text="Notification3" />
+
+    <Button
+        android:id="@+id/forth_notification"
+        style="@style/Base.Widget.AppCompat.Button.Daniel.Color"
+        android:layout_alignTop="@id/third_notification"
+        android:onClick="createNotification4"
+        android:text="Notification4" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NewBoston</string>
+    <string name="title_activity_main">New Boston</string>
+    <string name="title_activity_ui">UIActivity</string>
+
+    <string name="user_name">UserName</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Login</string>
+    <string name="welcome_login">Welcome Login</string>
+    <string name="column_span">Column Span</string>
+    <string name="regular">Regular</string>
+    <string name="raw_span">Raw Span</string>
+    <string name="button">Button</string>
+    <string name="setting_red">red</string>
+    <string name="setting_green">green</string>
+    <string name="setting_yellow">yellow</string>
+    <string name="button_animation">Animation</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_thread_handler">ThreadHandlerActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_activity_shift">ShiftActivity</string>
+    <string name="title_activity_sqlite">SqliteActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+</resources>

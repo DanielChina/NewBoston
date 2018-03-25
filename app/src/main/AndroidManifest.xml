@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="school.zx.newboston">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/splash"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BasicItemActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".demo.LifeCycleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.UIActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.CodingUiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.GridLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.ListenerTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.GestureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.FragmentTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.MasterDetail.ItemListActivity"
+            android:label="Master/Detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.MasterDetail.ItemDetailActivity"
+            android:label="Item Detail"
+            android:parentActivityName=".demo.MasterDetail.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="school.zx.newboston.demo.MasterDetail.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".demo.OverflowActivity"
+            android:label="Overflow Test"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".demo.AnimationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.IntentTest.FirstActivity"
+            android:label="@string/title_activity_first"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.IntentTest.SecondActivity"
+            android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.ThreadHandlerActivity"
+            android:label="@string/title_activity_thread_handler"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.Service.ServiceActivity"
+            android:label="@string/title_activity_service"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".demo.Service.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".demo.Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".demo.Service.ShiftActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".demo.Service.TimeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".demo.Sqlite.SqliteActivity"
+            android:label="@string/title_activity_sqlite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.video.VideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.CameraPicInvert.ImageCaptureActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".demo.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/DanielTheme" />
+        <activity
+            android:name=".demo.sharePreference.SharedPreferenceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

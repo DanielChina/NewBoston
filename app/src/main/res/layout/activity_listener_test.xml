@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="school.zx.newboston.demo.ListenerTestActivity">
+    <TextView
+        android:id="@+id/text_first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text_size"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text_second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text_size"
+        android:layout_below="@id/text_first_button"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/listener_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="return false"
+        android:layout_below="@id/text_second_button"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/listener_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="return true"
+        android:layout_below="@id/listener_first"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Counters"
+        android:textColor="@color/colorRed"
+        android:layout_below="@+id/listener_second"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
